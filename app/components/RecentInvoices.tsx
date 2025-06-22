@@ -39,14 +39,14 @@ export async function RecentInvoices() {
               <AvatarFallback>{item.clientName.slice(0, 2)}</AvatarFallback>
             </Avatar>
             <div className="flex flex-col gap-1">
-              <p className="text-sm font-medium leadin-none">
+              <p className="text-sm font-sm leadin-none">
                 {item.clientName}
               </p>
               <p className="text-sm text-muted-foreground">
                 {item.clientEmail}
               </p>
             </div>
-            <div className="ml-auto font-medium">
+            <div className="text-xs overflow-hidden hover:overflow-visible transition-all duration-200 cursor-pointer flex flex-wrap">
               +
               {formatCurrency({
                 amount: item.total,

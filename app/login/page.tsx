@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";        
 import {
   Card,
   CardContent,
@@ -45,7 +45,7 @@ export default async function Login() {
                   name="email"
                   type="email"
                   required
-                  placeholder="hello@hello.com"
+                  placeholder="e.g sly@hello.com"
                 />
               </div>
               <SubmitButton text="Login" />

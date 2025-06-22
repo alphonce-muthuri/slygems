@@ -1,6 +1,6 @@
 interface iAppProps {
   amount: number;
-  currency: "USD" | "EUR";
+  currency: "USD" | "KSH";
 }
 
 export function formatCurrency({ amount, currency }: iAppProps) {

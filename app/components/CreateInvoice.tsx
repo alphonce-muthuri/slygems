@@ -59,7 +59,7 @@ export function CreateInvoice({
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [rate, setRate] = useState("");
   const [quantity, setQuantity] = useState("");
-  const [currency, setCurrency] = useState("USD");
+  const [currency, setCurrency] = useState("KSH");
 
   const calcualteTotal = (Number(quantity) || 0) * (Number(rate) || 0);
 
@@ -115,7 +115,7 @@ export function CreateInvoice({
             <div>
               <Label>Currency</Label>
               <Select
-                defaultValue="USD"
+                defaultValue="KSH"
                 name={fields.currency.name}
                 key={fields.currency.key}
                 onValueChange={(value) => setCurrency(value)}
@@ -127,7 +127,7 @@ export function CreateInvoice({
                   <SelectItem value="USD">
                     United States Dollar -- USD
                   </SelectItem>
-                  <SelectItem value="EUR">Euro -- EUR</SelectItem>
+                  <SelectItem value="KSH">Kenyan Shilling -- Ksh</SelectItem>
                 </SelectContent>
               </Select>
               <p className="text-red-500 text-sm">{fields.currency.errors}</p>
@@ -341,7 +341,7 @@ export function CreateInvoice({
               name={fields.note.name}
               key={fields.note.key}
               defaultValue={fields.note.initialValue}
-              placeholder="Add your Note/s right here..."
+              placeholder="Add your Note/s right here ..."
             />
             <p className="text-red-500 text-sm">{fields.note.errors}</p>
           </div>

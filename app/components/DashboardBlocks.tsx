@@ -59,7 +59,7 @@ export async function DashboardBlocks() {
           <h2 className="text-2xl font-bold">
             {formatCurrency({
               amount: data.reduce((acc, invoice) => acc + invoice.total, 0),
-              currency: "USD",
+              currency: "KSH",
             })}
           </h2>
           <p className="text-xs text-muted-foreground">Based on total volume</p>

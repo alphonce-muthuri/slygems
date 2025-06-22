@@ -48,7 +48,7 @@ export default async function DeleteInvoiceRoute({
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Image src={WarningGif} alt="Warning Gif" className="rounded-lg" />
+          <Image src={WarningGif} alt="Warning Gif" className="rounded-lg unoptimized" />
         </CardContent>
         <CardFooter className="flex items-center justify-between">
           <Link
