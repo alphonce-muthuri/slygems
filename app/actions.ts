@@ -69,12 +69,12 @@ export async function createInvoice(prevState: any, formData: FormData) {
 
   const sender = {
     email: "hello@demomailtrap.co",
-    name: "Mailtrap Test",
+    name: "Sly Gems",
   };
 
   emailClient.send({
     from: sender,
-    to: [{ email: "geefonsie@gmail.com" }],
+    to: [{ email: "loveslygems@gmail.com" }],
     template_uuid: "09adbfef-65a2-4131-bd4a-b0e844ff7bc5",
     template_variables: {
       clientName: submission.value.clientName,
@@ -89,7 +89,7 @@ export async function createInvoice(prevState: any, formData: FormData) {
       invoiceLink:
         process.env.NODE_ENV !== "production"
           ? `http://localhost:3000/api/invoice/${data.id}`
-          : `https://invoice-marshal.vercel.app/api/invoice/${data.id}`,
+          : `https:/https:slygems.vercel.app/invoice/${data.id}`,
     },
   });
 
@@ -135,13 +135,13 @@ export async function editInvoice(prevState: any, formData: FormData) {
 
   const sender = {
     email: "hello@demomailtrap.co",
-    name: "Mailtrap Test",
+    name: "sly gems",
   };
 
   emailClient.send({
     from: sender,
-    to: [{ email: "geefonsie@gmail.com" }],
-    template_uuid: "09adbfef-65a2-4131-bd4a-b0e844ff7bc5",
+    to: [{ email: "loveslygems@gmail.com" }],
+    template_uuid: "684e7658-c045-4854-8381-da4a1974474e",
     template_variables: {
       clientName: submission.value.clientName,
       invoiceNumber: submission.value.invoiceNumber,
@@ -155,7 +155,7 @@ export async function editInvoice(prevState: any, formData: FormData) {
       invoiceLink:
         process.env.NODE_ENV !== "production"
           ? `http://localhost:3000/api/invoice/${data.id}`
-          : `https://invoice-marshal.vercel.app/api/invoice/${data.id}`,
+          : `https://slygems.vercel.app/invoice/${data.id}`,
     },
   });
 
